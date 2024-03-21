@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+.trailing-heart {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.trailing-heart::before {
+    content: '\2665';
+    font-size: 40px;
+    color: #ff3366;
+    display: block;
+
+}
+
+#typewriter-h1,
+#typewriter-h2 {
+    pointer-events: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    margin: 0;
+
+    background-color: #ddd4d4;
+    font-family: "Rowdies", sans-serif;
+}
+
+h1, h2 {
+    color: #c78ca0;
+    font-size: 3em;
+    margin: 0;
+    text-align: center;
+}
+h2{
+    font-size: 2em;
+}
+
+button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff3fa;
+}
+
+button:hover {
+    background-color: white;
+}
